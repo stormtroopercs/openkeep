@@ -12,6 +12,10 @@ services:
     depends_on:
       db:
         condition: service_healthy
+    # To use a .env file (PORT, HOST, LOG_LEVEL, ...) uncomment this and
+    # place a .env next to docker-compose.yml:
+    # env_file:
+    #   - .env
     environment:
       DATABASE_URL: postgres://openkeep:${POSTGRES_PASSWORD:?set POSTGRES_PASSWORD}@db:5432/openkeep
       BETTER_AUTH_SECRET: ${BETTER_AUTH_SECRET:?set BETTER_AUTH_SECRET (>=32 chars)}
