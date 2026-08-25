@@ -1,6 +1,6 @@
 # ---------- build ----------
 FROM node:24-alpine AS build
-RUN npm install -g pnpm@11.17.0
+RUN npm install -g pnpm@11.23.0
 WORKDIR /repo
 
 COPY pnpm-lock.yaml pnpm-workspace.yaml package.json ./
