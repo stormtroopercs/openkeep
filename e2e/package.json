@@ -10,11 +10,11 @@
     "test:e2e": "playwright test"
   },
   "devDependencies": {
-    "@axe-core/playwright": "4.12.1",
+    "@axe-core/playwright": "4.13.0",
     "@openkeep/config": "workspace:*",
     "@openkeep/shared": "workspace:*",
-    "@playwright/test": "1.62.0",
-    "@types/node": "^24.10.1",
+    "@playwright/test": "1.62.1",
+    "@types/node": "^24.13.3",
     "typescript": "7.0.2"
   }
 }
